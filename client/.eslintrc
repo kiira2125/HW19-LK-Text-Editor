@@ -1,14 +1,15 @@
 {
-  "env": {
+  "env":{
     "browser": true
   },
-  "rules": {
-    // Override our default settings just for this directory
-    "eqeqeq": "warn",
-    "strict": "off",
-    "import/no-extraneous-dependencies": "off",
-    "import/prefer-default-export": "off",
-    "no-underscore-dangle": "off",
-    "no-restricted-globals": "off"
+  "rules":{
+     // need to override our default settings only for this dir
+     "eqeqeq": "warn",
+     "strict": "off",
+     "import/no-extraneous-dependencies": "off",
+     "import/prefer-default-export": "off",
+     "no-underscore-dangle": "off",
+     "no-restricted-global": "off"
   }
-}
+
+};
