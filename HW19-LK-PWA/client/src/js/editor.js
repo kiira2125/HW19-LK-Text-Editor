@@ -7,7 +7,7 @@ export default class {
   constructor() {
     const localData = localStorage.getItem('content');
 
-    // check if CodeMirror is loaded
+    // check  CodeMirror is loaded
     if (typeof CodeMirror === 'undefined') {
       throw new Error('CodeMirror is not loaded');
     }
@@ -23,7 +23,7 @@ export default class {
       tabSize: 2,
     });
 
-    // When the editor is ready, it will then set the value to whatever is store in indexedDB
+    // editor is ready, it will then set the value to whatever is store in indexedDB
     getDb().then((data) => {
       console.info('Loaded data from IndexedDB, injecting into editor');
       this.editor.setValue(data || localData || header);
